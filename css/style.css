@@ -1,0 +1,27 @@
+body{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    /* extra-light = 200, light = 300, regular = 400, medium = 500, semi-bold = 600, bold = 700 */
+}
+
+#profile{
+    width:100%;
+    border-radius:25px;
+    border:2px solid transparent;
+    filter: drop-shadow(5px 5px 5px grey);
+}
+
+h1{
+    font-weight:700;
+}
+
+h2{
+    font-weight:600;
+}
+
+p{
+    font-weight:300;
+}
+
+a{
+    font-weight:500;
+}
