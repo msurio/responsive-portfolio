@@ -39,16 +39,66 @@ This is homework assignment #2: Responsive Portfolio. In this assignment, we, th
 * Must properly utilize Bootstrap components and grid system.
 
 
-## Running the project
-
-Explain how to run the automated tests for this system
-
 ### Break down
   ## Copy & Paste + Changes
 I wanted to focus on making sure that the header, navigation and footer were all universal in each page and respond the same. To ensure that, I foused on working on the index.html page first then copy and pasted those tags into the rest of the contact.html & portfolio.html pages. I changed the active navs to ensure that it is accurate and to let the user know which page they are on. I also changed the h2 tags to ensure the title of those pages are accurate as well. 
   
 ```html
 <h2>About Me</h2> <h2>Portfolio</h2> <h2>Contact</h2>
+```
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+```
+
+```html
+<header>
+        <!--This is the Navigation-->
+        <nav class="navbar navbar-light bg-light">
+
+            <!--Header H1-->
+            <div class="alert alert-primary" role="alert">
+                <h1 class="alert-heading">Marc Anthony Surio</h1>
+            </div>
+
+            <!--ul navigation-->
+            <ul class="nav nav-pills justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+```
+
+```html
+    <br>
+    <!--footer copy and paste-->
+    <footer class>
+        <div>
+            <span>&copy; Copyright of Marc Anthony Surio</span>
+        </div>
+    </footer>
 ```
 
 ### And coding style tests
