@@ -45,7 +45,7 @@ Explain how to run the automated tests for this system
 
 ### Break down
   ## Copy & Paste + Changes
-I wanted to focus on making sure that the header, navigation and footer were all universal in each page and respond the same. To ensure that, I foused on working on the index.html page first then copy and pasted those tags into the rest of the contact.html & portfolio.html pages. I changed the active navs to ensure that it is accurate and to let the user know which page they are on. I also changed the <h2> tags to ensure the title of those pages are accurate as well. 
+I wanted to focus on making sure that the header, navigation and footer were all universal in each page and respond the same. To ensure that, I foused on working on the index.html page first then copy and pasted those tags into the rest of the contact.html & portfolio.html pages. I changed the active navs to ensure that it is accurate and to let the user know which page they are on. I also changed the h2 tags to ensure the title of those pages are accurate as well. 
   
 ```html
 <h2>About Me</h2> <h2>Portfolio</h2> <h2>Contact</h2>
