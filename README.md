@@ -101,12 +101,70 @@ I wanted to focus on making sure that the header, navigation and footer were all
     </footer>
 ```
 
+These were the main things that were copied and pasted on each of the pages: index.html, portfolio.html, & contact.html.
+The main content were all different but all followed the same format of having a container-fluid, .row, .col-lg, .col-md, .col-sm, and sections.
+
 ### And coding style tests
 
-Explain what these tests test and why
+The coding styles for the header and footer and using bootstrap were fairly easy. I felt like that once you had all those components together then you already finished half of the work that you have to do. Bootstrap already uses a template that are very media-query friendly, but you still have to stylize the media queries to make it appealing. Google Chrome inspector is a huge asset and a life saver for this project as I can just inspect an element and then stylize it. 
+```css
+/*media queries */
 
-```
-Give an example
+/* devices with the pixel sizes of 769px to 980px*/
+@media screen and (max-width:980px) and (min-width:769px){
+    .container-fluid{
+        position:relative;
+        width:90%;
+        top:0;
+    }
+}
+
+/*devices with the pixel sizes between 641px and 768px*/
+@media screen and (max-width:768px) and (min-width:641px){
+    .container-fluid{
+        position:relative;
+        top:0;
+        width:75%;
+    }
+}
+
+/*devices with a a pixel of 640px and lower*/
+@media screen and (max-width: 640px){
+    div.alert.alert-primary{
+        width:100%;
+        text-align:center;
+    }
+
+    h1.alert-heading{
+        font-size:60px;
+    }
+    ul.nav.nav-pills.justify-content-end{
+        width:100%;
+        font-size:24px;
+    }
+    
+    li.nav-item{
+        margin-right:15%;
+    }
+
+    h2{
+        width:100%;
+        text-align:center;
+        font-size:54px;
+    }
+
+    div.col-lg-4.col-md-4.col-sm-4{
+        max-width:100%;
+        flex-basis:100%;
+    }
+
+    section.col-lg-8.col-md-7.col-sm-7{
+        max-width:100%;
+        flex-basis: 100%;
+        padding:10px;
+    }
+
+}
 ```
 
 ## Deployment
